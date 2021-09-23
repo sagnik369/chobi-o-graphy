@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+  /* border: 1px solid greenyellow; */
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bcolor: rgb(145, 145, 145);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.hero-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  color: var(--bcolor);
+  scroll-snap-align: start;
+}
+
+.hero-img {
+  position: absolute;
+  width: 100%;
+  filter: blur(.65rem);
+}
+
+.hr1, .hr2 {
+  border: 1px solid var(--bcolor);
+  position: absolute;
+  width: 80%;
+}
+
+.hr1 {
+  bottom: 5rem;
+  left: -1rem;
+}
+
+.hr2 {
+  top: 0;
+  left: calc(50%);
+  transform: rotate(90deg);
+}
+
+.hero-text-container {
+  position: absolute;
+  top: 36vh;
+  left: 15vh;
+}
+
+.hero-heading {
+  font-size: 5rem;
+  letter-spacing: 8px;
+  opacity: 1;
+  font-family: "Poiret One", Arial, Helvetica, sans-serif;
+  transition: transform .4s ease;
+}
+
+.hero-description {
+  padding: 2rem 0 0 0;
+  font-size: 2rem;
+  font-family: "Montserrat", 'Courier New', Courier, monospace;
+  transition: transform .6s ease;
+}
+
+.about-container {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 100vh;
+  position: relative;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.about-img-1-cont, .about-img-2-cont {
+  height: 37rem;
+  width: 23rem;
+  overflow: hidden;
+  position: absolute;
+  filter: grayscale(.8);
+  border: .45rem inset var(--bcolor);
+}
+
+.about-img-1-cont {
+  top: -24rem;
+  left: -24rem;
+}
+
+.about-img-2-cont {
+  bottom: -24rem;
+  right: -24rem;
+}
+
+.about-img-1 {
+  height: 48rem;
+  width: 26rem;
+}
+
+.about-img-2 {
+  height: 37rem;
+  width: 29rem;
+}
+
+.about-text-container {
+  margin: 0 auto;
+  height: 70%;
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background: linear-gradient(200deg, rgba(0,0,0,1) 0%, rgba(0,15,31,1) 50%, rgba(0,0,0,1) 100%);
+  transform: translateY(-110%);
+}
+
+.about-text-heading, .about-text-paragraph {
+  color: var(--bcolor);
+  text-align: center;
+  z-index: 1;
+}
+
+.about-text-heading {
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3rem;
+}
+
+.about-text-paragraph {
+  font-family: "Montserrat", 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  line-height: 2.1;
+}

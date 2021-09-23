@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repl.it</title>
+    <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main id="butter">
+
+
+
+      <div id="hero-container" class="hero-container">
+        <img id="hero-img" src="images/img-hero.jpeg" alt="my camera photo" class="hero-img">
+        <div id="hero-text-container" class="hero-text-container">
+          <h1 id="hero-heading" class="hero-heading">
+            Hello I'm Aniket
+          </h1>
+          <p id="hero-description" class="hero-description">
+            I am freelancing
+          </p>
+        </div>
+        <hr class="hr1">
+        <hr class="hr2">
+      </div>
+
+
+
+      <div id="about-container" class="about-container">
+        <div id="about-img-1-cont" class="about-img-1-cont">
+          <img class="about-img-1" src="images/about-1.jpeg" alt="about image-1">
+        </div>
+        <div id="about-img-2-cont" class="about-img-2-cont">
+          <img class="about-img-2" src="images/about-2.jpeg" alt="about image-2">
+        </div>
+        <div id="about-text-container" class="about-text-container">
+          <h3 class="about-text-heading">
+            Who am I
+          </h3>
+          <p class="about-text-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim neque debitis fuga aspernatur.</p>
+        </div>
+      </div>
+
+
+
+    </main>
+
+    <script src="javascript/script.js"></script>
+    <script src="javascript/butter.js"></script>
+    <script src="javascript/locoscroll.js"></script>
+    <script>
+      butter.init({
+        wrapperId: 'butter',
+        cancelOnTouch: true,
+        wrapperDamper: 0.12
+       });
+    </script>
+    <noscript>Bro, just enable javascript for God's sake!</noscript>
+  </body>
+</html>
