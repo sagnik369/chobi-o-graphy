@@ -1,0 +1,128 @@
+.about {
+
+    &-container {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+  
+    &-img {
+
+        &-1-cont-border, &-2-cont-border {
+            height: 39rem;
+            width: 25rem;
+            position: absolute;
+        }
+
+        &-1-cont-border {
+            top: 8rem;
+            left: 8rem;
+        }
+
+        &-2-cont-border {
+            bottom: 8rem;
+            right: 8rem;
+        }
+    
+        &-1-cont, &-2-cont {
+            height: calc(39rem - 5px);
+            width: calc(25rem - 5px);
+            overflow: hidden;
+            filter: grayscale(.8);
+            position: absolute;
+            top: 2px;
+            left: 2px;
+        }
+
+        &-1 {
+            height: 48rem;
+            width: 26rem;
+        }
+
+        &-2 {
+            height: 39rem;
+            width: 31rem;
+        }
+
+    }
+
+    &-text {
+
+        &-container {
+            position: relative;
+            top: 10vh;
+            margin: auto;
+            height: 80%;
+            width: 28%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            background: url('../../backgrounds/background\ \(2\).png');
+            background-size: cover;
+            opacity: 0;
+            transition: opacity 2.5s;
+        }
+        
+        &-heading, &-paragraph {
+            color: rgb(199, 199, 199);
+            text-align: center;
+            margin: 0 1rem;
+        }
+        
+        &-heading {
+            font-family: $Raleway;
+            font-size: 3.2rem;
+        }
+        
+        &-paragraph {
+            font-family: $Montserrat;
+            font-size: 1.8rem;
+            line-height: 2.1;
+        }
+       
+    }    
+
+}
+
+
+
+.img-border {
+
+    &-top, &-bottom {
+        border: 1px solid white;
+        width: 35rem;
+        height: 0;
+    }
+
+    &-left, &-right {
+        border: 1px solid white;
+        height: 45rem;
+        width: 0;
+        display: inline-block;
+    }
+  
+    &-top {
+        position: absolute;
+        top: 0;
+        left: -6rem;
+    }
+
+    &-bottom {
+        position: absolute;
+        bottom: 0;
+        right: -6rem;
+    }
+  
+    &-left {
+        position: absolute;
+        left: 0;
+        top: -6rem;
+    }
+  
+    &-right {
+        position: absolute;
+        right: 0;
+        bottom: -6rem;
+    }
+
+}

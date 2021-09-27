@@ -1,0 +1,51 @@
+.hero {
+    &-container {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        color: var(--bcolor);
+    }
+  
+    &-img {
+        position: absolute;
+        width: 100%;
+        filter: blur(.65rem);
+    }
+
+    &-text-container {
+        position: absolute;
+        top: 36vh;
+        left: 15vh;
+    }
+
+    &-heading {
+        font-size: 5rem;
+        letter-spacing: 8px;
+        font-family: $Poiret-one;
+        transition: transform .3s;
+    }
+
+    &-description {
+        padding: 2rem 0 0 0;
+        font-size: 2rem;
+        font-family: $Montserrat;
+        transition: transform .3s;
+    } 
+}  
+
+.hr1, .hr2 {
+    border: 1px solid var(--bcolor);
+    position: absolute;
+    width: 80%;
+}
+  
+.hr1 {
+    bottom: 5rem;
+    left: -1rem;
+}
+
+.hr2 {
+    top: 5rem;
+    right: -1rem;
+}

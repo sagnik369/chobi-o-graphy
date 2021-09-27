@@ -1,61 +1,122 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>repl.it</title>
+    <meta name="author" content="chobi-o-graphy">
+    <meta name="description" content="Lorem ipsum">
+    <link rel="stylesheet" href="./css/javalib.css" type="text/css">
     <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <title>Chobi-o-graphy&nbsp;&nbsp;|&nbsp;&nbsp;Lorem Ipsum</title>
   </head>
-  <body>
-    <main id="butter">
+
+
+  <body data-scroll-container>
+
+      <div id="custom-cursor"></div>
 
 
 
-      <div id="hero-container" class="hero-container">
-        <img id="hero-img" src="images/img-hero.jpeg" alt="my camera photo" class="hero-img">
-        <div id="hero-text-container" class="hero-text-container">
-          <h1 id="hero-heading" class="hero-heading">
+      <section id="hero-container" class="hero-container" data-scroll-section>
+        <img src="images/img-hero.jpeg" alt="my camera photo" class="hero-img">
+        <div class="hero-text-container">
+          <h1 id="hero-heading" class="hero-heading" data-scroll data-scroll-speed="6" data-scroll-position="top">
             Hello I'm Aniket
           </h1>
-          <p id="hero-description" class="hero-description">
-            I am freelancing
+          <p id="hero-description" class="hero-description" data-scroll data-scroll-speed="4" data-scroll-position="top">
+            I capture moments.
           </p>
         </div>
-        <hr class="hr1">
-        <hr class="hr2">
-      </div>
+        <hr class="hr1" data-scroll data-scroll-speed="-9" data-scroll-position="top" data-scroll-direction="horizontal">
+        <hr class="hr2" data-scroll data-scroll-speed="9" data-scroll-position="top" data-scroll-direction="horizontal">
+      </section>
 
 
 
-      <div id="about-container" class="about-container">
-        <div id="about-img-1-cont" class="about-img-1-cont">
-          <img class="about-img-1" src="images/about-1.jpeg" alt="about image-1">
+      
+      <section class="moving-section" data-scroll-section>
+        <hr>
+        <div data-scroll data-scroll-speed="4" data-scroll-direction="horizontal">
+          C'est un photographe professionnel&nbsp;&nbsp;&nbsp;&nbsp;C'est un photographe professionnel&nbsp;&nbsp;&nbsp;&nbsp;C'est un photographe professionnel
         </div>
-        <div id="about-img-2-cont" class="about-img-2-cont">
-          <img class="about-img-2" src="images/about-2.jpeg" alt="about image-2">
+        <hr>
+      </section>
+
+      
+
+      <section class="street-container" data-scroll-section>
+        <div class="street-container-photo" data-scroll data-scroll-speed="1.5">
+          <a class="street-container-photo-link" href="./pages/index2.html">
+            <img class="street-container-photo-collage" src="./images/street-section.png" alt="street-collage" data-scroll data-scroll-class="add-opacity">
+          </a>
         </div>
-        <div id="about-text-container" class="about-text-container">
+        <div class="street-container-description">
+          <h3 class="street-container-description-heading" data-scroll data-scroll-class="add-opacity">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, debitis obcaecati numquam eius</h3>
+        </div>
+      </section>
+
+
+
+
+      <section class="murti-container" data-scroll-section>
+        <div class="murti-container-photo" data-scroll data-scroll-speed="1.5">
+          <a class="murti-container-photo-link" href="./pages/index3.html">
+            <img class="murti-container-photo-collage" src="./images/murti-section.png" alt="murti-collage" data-scroll data-scroll-class="add-opacity">
+          </a>
+        </div>
+        <div class="murti-container-description">
+          <h3 class="murti-container-description-heading" data-scroll data-scroll-class="add-opacity">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste dolorem magnam quasi adipisci aspernatur</h3>
+        </div>
+      </section>
+
+
+
+       
+       <section class="moving-section" data-scroll-section>
+        <hr>
+        <div data-scroll data-scroll-speed="-4" data-scroll-direction="horizontal">
+          C'est un photographe professionnel&nbsp;&nbsp;&nbsp;&nbsp;C'est un photographe professionnel&nbsp;&nbsp;&nbsp;&nbsp;C'est un photographe professionnel
+        </div>
+        <hr>
+      </section>
+
+
+
+
+      <section class="about-container" data-scroll-section>
+        <div class="about-img-1-cont-border" data-scroll data-scroll-speed="2">
+          <div class="img-border-top" data-scroll data-scroll-speed="5" data-scroll-delay=".1" data-scroll-direction="horizontal" data-scroll-position="bottom"></div>
+          <div class="img-border-left" data-scroll data-scroll-speed="5" data-scroll-delay=".1" data-scroll-position="bottom"></div>
+          <div class="about-img-1-cont">
+            <img class="about-img-1" src="images/about-1.jpeg" alt="about image-1">
+          </div>
+          <div class="img-border-right" data-scroll data-scroll-speed="5" data-scroll-delay=".1" data-scroll-position="bottom"></div>
+          <div class="img-border-bottom" data-scroll data-scroll-speed="5" data-scroll-delay=".1" data-scroll-direction="horizontal" data-scroll-position="bottom"></div>
+        </div>
+
+        <div class="about-img-2-cont-border" data-scroll data-scroll-speed="2">
+          <div class="img-border-top" data-scroll data-scroll-speed="5" data-scroll-delay=".1" data-scroll-direction="horizontal" data-scroll-position="bottom"></div>
+          <div class="img-border-left" data-scroll data-scroll-speed="5" data-scroll-delay=".1" data-scroll-position="bottom"></div>
+          <div class="about-img-2-cont">
+            <img class="about-img-2" src="images/about-2.jpeg" alt="about image-2">
+          </div>
+          <div class="img-border-right" data-scroll data-scroll-speed="5" data-scroll-delay=".1" data-scroll-position="bottom"></div>
+          <div class="img-border-bottom" data-scroll data-scroll-speed="5" data-scroll-delay=".1" data-scroll-direction="horizontal" data-scroll-position="bottom"></div>
+        </div>
+
+        <div class="about-text-container" data-scroll data-scroll-class="add-opacity">
           <h3 class="about-text-heading">
             Who am I
           </h3>
           <p class="about-text-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim neque debitis fuga aspernatur.</p>
         </div>
-      </div>
+      </section>
 
 
 
-    </main>
-
-    <script src="javascript/script.js"></script>
-    <script src="javascript/butter.js"></script>
-    <script src="javascript/locoscroll.js"></script>
-    <script>
-      butter.init({
-        wrapperId: 'butter',
-        cancelOnTouch: true,
-        wrapperDamper: 0.12
-       });
-    </script>
+    <script src="./javascript/javalib.js"></script>
+    <script src="./javascript/index.js"></script>
     <noscript>Bro, just enable javascript for God's sake!</noscript>
   </body>
 </html>
