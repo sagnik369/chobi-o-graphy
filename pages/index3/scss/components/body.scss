@@ -1,0 +1,34 @@
+.main-body {
+    width: 95%;
+    margin: 25rem auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(10, 85vh);
+    column-gap: 2.5rem;
+    row-gap: 15rem;
+    align-content: space-evenly;
+    align-items: center;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &-img:nth-of-type(odd) {
+        margin: 3rem 0;
+        position: relative;
+        border: .75rem inset var(--bcolor);
+        width: 100%;
+    }
+
+    &-img:nth-of-type(even) {
+        margin: 3rem 0;
+        position: relative;
+        border: .75rem outset var(--bcolor);
+        width: 100%;
+    }
+}

@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+:root {
+  --bcolor: rgb(145, 145, 145); }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  box-sizing: border-box;
+  background: linear-gradient(200deg, #0a0a0a 10%, #000f1f 50%, #0a0a0a 100%);
+  user-select: none; }
+
+.c-scrollbar_thumb {
+  background: #001e3f; }
+
+#custom-cursor {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(190, 190, 190, 0.85);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  transition: all .3s ease-out; }
+
+.header-container {
+  width: 100%;
+  height: 55vh;
+  background: url("../background/1.png");
+  background-size: cover;
+  border-bottom: .3rem double honeydew; }
+  .header-container-heading {
+    width: 85%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--bcolor);
+    font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    line-height: 200%;
+    text-align: center;
+    text-transform: uppercase; }
+
+.main-body {
+  width: 95%;
+  margin: 25rem auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, 85vh);
+  column-gap: 2.5rem;
+  row-gap: 10rem;
+  align-content: space-evenly;
+  align-items: center; }
+  .main-body::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+  .main-body-img:nth-of-type(odd) {
+    margin: 3rem 0;
+    position: relative;
+    border: 0.75rem inset var(--bcolor);
+    width: 100%; }
+  .main-body-img:nth-of-type(even) {
+    margin: 3rem 0;
+    position: relative;
+    border: 0.75rem outset var(--bcolor);
+    width: 100%; }

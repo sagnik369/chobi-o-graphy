@@ -5,8 +5,16 @@
   "main": "script.js",
   "scripts": {
     "watch": "node-sass scss/main.scss css/style.css -w",
+    "watch2": "node-sass pages/index2/scss/main.scss pages/index2/css/style.css -w",
+    "watch3": "node-sass pages/index3/scss/main.scss pages/index3/css/style.css -w",
+
     "autoprefix": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.prefix.css",
-    "compress": "node-sass css/style.prefix.css css/style.min.css --output-style compressed"
+    "autoprefix2": "postcss --use autoprefixer -b 'last 10 versions' pages/index2/css/style.css -o pages/index2/css/style.prefix.css",
+    "autoprefix3": "postcss --use autoprefixer -b 'last 10 versions' pages/index3/css/style.css -o pages/index3/css/style.prefix.css",
+    
+    "compress": "node-sass css/style.prefix.css css/style.min.css --output-style compressed",
+    "compress2": "node-sass pages/index2/css/style.prefix.css pages/index2/css/style.min.css --output-style compressed",
+    "compress3": "node-sass pages/index3/css/style.prefix.css pages/index3/css/style.min.css --output-style compressed"
   },
   "author": "",
   "license": "ISC",
