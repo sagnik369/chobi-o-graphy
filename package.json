@@ -4,25 +4,25 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "watch": "node-sass scss/main.scss css/style.css -w",
-    "watch2": "node-sass pages/index2/scss/main.scss pages/index2/css/style.css -w",
-    "watch3": "node-sass pages/index3/scss/main.scss pages/index3/css/style.css -w",
+    "scss:compile": "node-sass scss/main.scss css/style.css && node-sass pages/index2/scss/main.scss pages/index2/css/style.css && node-sass pages/index3/scss/main.scss pages/index3/css/style.css",
 
-    "autoprefix": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.prefix.css",
-    "autoprefix2": "postcss --use autoprefixer -b 'last 10 versions' pages/index2/css/style.css -o pages/index2/css/style.prefix.css",
-    "autoprefix3": "postcss --use autoprefixer -b 'last 10 versions' pages/index3/css/style.css -o pages/index3/css/style.prefix.css",
-    
-    "compress": "node-sass css/style.prefix.css css/style.min.css --output-style compressed",
-    "compress2": "node-sass pages/index2/css/style.prefix.css pages/index2/css/style.min.css --output-style compressed",
-    "compress3": "node-sass pages/index3/css/style.prefix.css pages/index3/css/style.min.css --output-style compressed"
+    "scss:watch": "node-sass scss/main.scss css/style.css -w && node-sass pages/index2/scss/main.scss pages/index2/css/style.css -w && node-sass pages/index3/scss/main.scss pages/index3/css/style.css -w",
+
+    "css:autoprefix": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.prefix.css && postcss --use autoprefixer -b 'last 10 versions' pages/index2/css/style.css -o pages/index2/css/style.prefix.css && postcss --use autoprefixer -b 'last 10 versions' pages/index3/css/style.css -o pages/index3/css/style.prefix.css",
+
+    "css:compress": "node-sass css/style.prefix.css css/style.min.css --output-style compressed && node-sass pages/index2/css/style.prefix.css pages/index2/css/style.min.css --output-style compressed && node-sass pages/index3/css/style.prefix.css pages/index3/css/style.min.css --output-style compressed",
+
+    "javascript:compress": "uglifyjs javascript/index.js -o javascript/index.min.js --compress && uglifyjs pages/index2/javascript/index.js -o pages/index2/javascript/index.min.js --compress && uglifyjs pages/index3/javascript/index.js -o pages/index3/javascript/index.min.js --compress"
   },
+
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer": "^10.3.4",
     "node-sass": "^6.0.1",
     "postcss": "^8.3.6",
-    "postcss-cli": "^8.3.1"
-  }
+    "postcss-cli": "^8.3.1",
+    "uglify-js": "^3.14.2"
+  },
+  "dependencies": {}
 }

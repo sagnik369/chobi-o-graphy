@@ -6,9 +6,11 @@
 @import './components/base.scss';
 @import './components/hero.scss';
 @import './components/movingstrip.scss';
-@import './components/street-container.scss';
-@import './components/murti-container.scss';
+@import './components/streetcontainer.scss';
+@import './components/murticontainer.scss';
 @import './components/about.scss';
+@import './components/media';
+@import './abstracts/animations';
 
 
 @import './abstracts/isinview.scss';

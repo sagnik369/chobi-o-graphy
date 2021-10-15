@@ -60,7 +60,7 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(4, 85vh);
+  grid-template-rows: repeat(3, 85vh);
   column-gap: 2.5rem;
   row-gap: 10rem;
   align-content: space-evenly;
@@ -81,3 +81,36 @@ body {
     position: relative;
     border: 0.75rem outset var(--bcolor);
     width: 100%; }
+
+@media (max-width: 950px) {
+  html {
+    font-size: 52.5%; } }
+
+@media (max-width: 670px) {
+  html {
+    font-size: 42.5%; }
+  .main-body {
+    margin: 20rem auto;
+    width: 90%;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 7rem; } }
+
+@media (max-width: 550px) {
+  .main-body {
+    margin: 15rem auto;
+    width: 65%;
+    grid-template-columns: repeat(1, auto);
+    row-gap: 25rem; } }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 37.5%; }
+  .main-body {
+    width: 85%;
+    row-gap: 20rem; } }
+
+@media (max-width: 350px) {
+  html {
+    font-size: 32.5%; }
+  .main-body {
+    row-gap: 10rem; } }

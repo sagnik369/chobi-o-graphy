@@ -77,6 +77,18 @@ body {
   top: 5rem;
   right: -1rem; }
 
+.scroll-indicator {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  opacity: 0;
+  border-bottom: 2px solid whitesmoke;
+  border-right: 2px solid whitesmoke;
+  bottom: 10rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg) skew(0deg, 0deg);
+  animation: appear 1s ease 3s 1 alternate forwards, scrolldown 1s ease 1s infinite alternate forwards; }
+
 .moving-section {
   text-align: center;
   font-size: 1.7em;
@@ -256,6 +268,101 @@ body {
   position: absolute;
   right: 0;
   bottom: -6rem; }
+
+@media (max-width: 1040px) {
+  html {
+    font-size: 57.5%; } }
+
+@media (max-width: 1020px) {
+  html {
+    font-size: 52.5%; } }
+
+@media (max-width: 950px) {
+  html {
+    font-size: 47.5%; }
+  .about-text-container {
+    height: 70%;
+    top: 15vh; } }
+
+@media (max-width: 900px) {
+  .about-img-1-cont-border {
+    top: 7rem;
+    left: 4.5rem; }
+  .about-img-2-cont-border {
+    bottom: 7rem;
+    right: 4.5rem; } }
+
+@media (max-width: 860px) {
+  .about-img-1-cont, .about-img-2-cont {
+    border: 5px inset var(--bcolor); }
+  .img-border-top, .img-border-left, .img-border-bottom, .img-border-right {
+    display: none; }
+  .about-text-container {
+    width: 32.5rem; } }
+
+@media (max-width: 780px) {
+  .about-container {
+    height: 200vh; }
+  .about-img-1-cont-border, .about-img-2-cont-border {
+    height: 46rem;
+    width: 32rem; }
+  .about-img-1-cont-border {
+    top: 5rem;
+    left: 4.5rem; }
+  .about-img-2-cont-border {
+    bottom: 5rem;
+    right: 4.5rem; }
+  .about-img-1-cont, .about-img-2-cont {
+    height: calc(46rem - 5px);
+    width: calc(32rem - 5px); }
+  .about-img-1 {
+    height: 61rem;
+    width: 33rem; }
+  .about-img-2 {
+    height: 50rem;
+    width: 38rem; }
+  .about-text-container {
+    top: 75vh;
+    height: 27.5%;
+    width: 80%; }
+  .about-text-heading {
+    font-size: 3.8rem; }
+  .about-text-paragraph {
+    font-size: 2rem; } }
+
+@media (max-width: 780px) {
+  .hero-text-container {
+    top: 22.5rem;
+    left: 7.5rem;
+    color: whitesmoke; }
+  .hero-heading {
+    font-size: 4rem; }
+  .murti-container-description-heading, .street-container-description-heading {
+    font-size: 2.75rem;
+    width: 85%; } }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 42.5%; }
+  .hero-text-container {
+    bottom: 2.5rem;
+    left: 5rem; }
+  .hero-heading {
+    font-size: 3.5rem; } }
+
+@keyframes scrolldown {
+  from {
+    bottom: 10rem;
+    transform: translateX(-50%) rotate(45deg) skew(0deg, 0deg); }
+  to {
+    bottom: 7rem;
+    transform: translateX(-50%) rotate(45deg) skew(5deg, 5deg); } }
+
+@keyframes appear {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .add-opacity {
   opacity: 1; }

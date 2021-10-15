@@ -1,0 +1,48 @@
+@media (max-width: 950px) {
+    html {
+        font-size: 52.5%;
+    }
+    .main-body {
+        row-gap: 10rem;
+        column-gap: 3.5rem;
+    }
+}
+
+@media (max-width: 780px) {
+    html {
+        font-size: 42.5%;
+    }
+    .main-body {
+        margin: 20rem auto;
+        width: 85%;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width: 550px) {
+    .main-body {
+        margin: 15rem auto;
+        width: 65%;
+        grid-template-columns: repeat(1, auto);
+        row-gap: 25rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 37.5%;
+    }
+    .main-body {
+        width: 85%;
+        row-gap: 20rem;
+    }
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 32.5%;
+    }
+    .main-body {
+        row-gap: 10rem;
+    }
+}
