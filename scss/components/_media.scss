@@ -32,6 +32,15 @@
 }
 
 @media (max-width: 860px) {
+    .hr1 {
+        bottom: 8rem;
+    }
+    .hr2 {
+        top: 8rem;
+    }
+    .scroll-indicator {
+        bottom: 15rem;
+    }
     .about-img-1-cont, .about-img-2-cont {
         border: 5px inset var(--bcolor);
     }

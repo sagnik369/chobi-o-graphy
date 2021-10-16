@@ -80,13 +80,13 @@ body {
   right: -1rem; }
 
 .scroll-indicator {
+  bottom: 11rem;
   width: 3rem;
   height: 3rem;
   position: absolute;
   opacity: 0;
   border-bottom: 2px solid whitesmoke;
   border-right: 2px solid whitesmoke;
-  bottom: 11rem;
   left: 50%;
   transform: translateX(-50%) rotate(45deg) skew(0deg, 0deg);
   animation: appear 1s ease 3s 1 alternate forwards, scrolldown 1s ease 1s infinite alternate forwards; }
@@ -97,9 +97,14 @@ body {
   letter-spacing: .5rem;
   color: silver;
   font-style: italic;
+  width: 100vw;
+  overflow-x: hidden; }
+
+.moving-item {
   width: 150rem; }
-  .moving-section hr {
-    border: 1px solid var(--bcolor); }
+
+.moving hr {
+  border: 1px solid var(--bcolor); }
 
 .street-container {
   width: 100vw;
@@ -295,6 +300,12 @@ body {
     right: 4.5rem; } }
 
 @media (max-width: 860px) {
+  .hr1 {
+    bottom: 8rem; }
+  .hr2 {
+    top: 8rem; }
+  .scroll-indicator {
+    bottom: 15rem; }
   .about-img-1-cont, .about-img-2-cont {
     border: 5px inset var(--bcolor); }
   .img-border-top, .img-border-left, .img-border-bottom, .img-border-right {
@@ -354,10 +365,10 @@ body {
 
 @keyframes scrolldown {
   from {
-    bottom: 11rem;
+    bottom: 15rem;
     transform: translateX(-50%) rotate(45deg) skew(0deg, 0deg); }
   to {
-    bottom: 8rem;
+    bottom: 10rem;
     transform: translateX(-50%) rotate(45deg) skew(5deg, 5deg); } }
 
 @keyframes appear {

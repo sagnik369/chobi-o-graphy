@@ -1,10 +1,17 @@
-.moving-section {
-    text-align: center;
-    font-size: 1.7em;
-    letter-spacing: .5rem;
-    color: silver;
-    font-style: italic;
-    width: 150rem;
+.moving {
+    &-section {
+        text-align: center;
+        font-size: 1.7em;
+        letter-spacing: .5rem;
+        color: silver;
+        font-style: italic;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    &-item {
+        width: 150rem;
+    }
 
     hr {
         border: 1px solid var(--bcolor);
