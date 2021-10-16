@@ -97,14 +97,9 @@ body {
   letter-spacing: .5rem;
   color: silver;
   font-style: italic;
-  width: 100vw;
-  overflow-x: hidden; }
-
-.moving-element {
   width: 150rem; }
-
-.moving hr {
-  border: 1px solid var(--bcolor); }
+  .moving-section hr {
+    border: 1px solid var(--bcolor); }
 
 .street-container {
   width: 100vw;
