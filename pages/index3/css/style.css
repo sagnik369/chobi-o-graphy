@@ -16,8 +16,7 @@ html {
 body {
   box-sizing: border-box;
   background: linear-gradient(200deg, #0a0a0a 10%, #000f1f 50%, #0a0a0a 100%);
-  user-select: none;
-  overflow: hidden; }
+  user-select: none; }
 
 .c-scrollbar_thumb {
   background: #001e3f; }

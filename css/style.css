@@ -16,7 +16,9 @@ html {
 body {
   box-sizing: border-box;
   background: linear-gradient(200deg, #0a0a0a 10%, #000f1f 50%, #0a0a0a 100%);
-  user-select: none; }
+  user-select: none;
+  width: 100vw;
+  overflow-x: hidden; }
 
 .c-scrollbar_thumb {
   background: #001e3f; }
@@ -84,7 +86,7 @@ body {
   opacity: 0;
   border-bottom: 2px solid whitesmoke;
   border-right: 2px solid whitesmoke;
-  bottom: 10rem;
+  bottom: 11rem;
   left: 50%;
   transform: translateX(-50%) rotate(45deg) skew(0deg, 0deg);
   animation: appear 1s ease 3s 1 alternate forwards, scrolldown 1s ease 1s infinite alternate forwards; }
@@ -352,10 +354,10 @@ body {
 
 @keyframes scrolldown {
   from {
-    bottom: 10rem;
+    bottom: 11rem;
     transform: translateX(-50%) rotate(45deg) skew(0deg, 0deg); }
   to {
-    bottom: 7rem;
+    bottom: 8rem;
     transform: translateX(-50%) rotate(45deg) skew(5deg, 5deg); } }
 
 @keyframes appear {

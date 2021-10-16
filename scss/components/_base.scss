@@ -18,6 +18,8 @@ body {
   box-sizing: border-box;
   background: linear-gradient(200deg, rgba(10,10,10,1) 10%, rgba(0,15,31,1) 50%, rgba(10,10,10,1) 100%);
   user-select: none;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .c-scrollbar_thumb {
